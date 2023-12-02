@@ -7,3 +7,6 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [me][github] using
     Every year since then, beginning on the first day of December, a programming puzzle is published every day for twenty-five days.
     You can solve the puzzle and provide an answer using the language of your choice.
 
+[aoc]: https://adventofcode.com
+[github]: https://github.com/pedroaraoz
+[template]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
