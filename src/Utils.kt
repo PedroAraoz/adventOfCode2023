@@ -23,3 +23,5 @@ fun Any?.println() = println(this)
 fun String.onlyNumber() = this.filter { it.isDigit() }.toInt()
 
 fun String.onlyString() = this.filter { it.isLetter() }
+
+fun List<String>.toInt() = this.map { it.toInt() }
