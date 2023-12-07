@@ -1,10 +1,10 @@
 fun main() {
   fun part1(input: List<String>): Any {
-    return input.size
+    return input
   }
 
   fun part2(input: List<String>): Any {
-    return input.size
+    return input
   }
 
   val input = readInput("day0")
