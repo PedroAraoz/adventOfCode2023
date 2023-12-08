@@ -6,7 +6,7 @@ fun main() {
       val splitLine = i.split(":")
       val (winning, my) = splitLine[1].split("|").map { it.trim().split(" ").filter { e -> e.isNotBlank() }.toInt() }
       Card(
-        id = splitLine[0].onlyNumber(),
+        id = splitLine[0].onlyDigitsToInt(),
         myWinningNumbers = winning.intersect(my.toSet()).toList()
       )
     }

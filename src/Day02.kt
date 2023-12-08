@@ -1,14 +1,14 @@
 fun main() {
   fun inputToGames(input: List<String>) = input.map { i ->
     val split = i.split(":")
-    val gameId = split[0].onlyNumber()
+    val gameId = split[0].onlyDigitsToInt()
     val stringDraws = split[1].trim().split(";")
     val draws = stringDraws.map { draw ->
       val colors = draw.split(",")
       Draw(
-        red = colors.firstOrNull { it.onlyString() == "red" }?.onlyNumber() ?: 0,
-        green = colors.firstOrNull { it.onlyString() == "green" }?.onlyNumber() ?: 0,
-        blue = colors.firstOrNull { it.onlyString() == "blue" }?.onlyNumber() ?: 0,
+        red = colors.firstOrNull { it.onlyString() == "red" }?.onlyDigitsToInt() ?: 0,
+        green = colors.firstOrNull { it.onlyString() == "green" }?.onlyDigitsToInt() ?: 0,
+        blue = colors.firstOrNull { it.onlyString() == "blue" }?.onlyDigitsToInt() ?: 0,
       )
     }
     Game(
